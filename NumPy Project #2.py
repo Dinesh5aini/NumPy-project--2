@@ -32,3 +32,22 @@ print()
 '''
 3. Which row serves as the headers/titles for all the columns.
 '''
+print(f"Row 1 serves as the header for all the columns.\n",data[0,:])
+
+print()
+
+'''
+4. Print the data contained in column 2 and 3 from row 1 till row 20
+'''
+print("The data contained in column 2 and 3 from row 1 till row 20 is:\n",data[1:21,1:3])
+
+print()
+
+'''
+5. Print the data present in only the first three and the last three rows of all the columns in a
+single output.
+'''
+data_F_L_3row=np.concatenate((data[1:4], data[-3:]),axis=0)
+print("the data present in only the first three and the last three rows of all the columns:\n",data_F_L_3row)
+
+print()
