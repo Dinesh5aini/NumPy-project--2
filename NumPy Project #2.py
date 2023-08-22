@@ -47,7 +47,31 @@ print()
 5. Print the data present in only the first three and the last three rows of all the columns in a
 single output.
 '''
-data_F_L_3row=np.concatenate((data[1:4], data[-3:]),axis=0)
+data_F_L_3row=np.concatenate((data[1:4,:], data[-3:,:]),axis=0)
 print("the data present in only the first three and the last three rows of all the columns:\n",data_F_L_3row)
 
 print()
+
+'''
+6. Sort the data on the basis of net amount of electricity generated irrespective of the
+source.
+'''
+
+
+print()
+
+'''
+7. Find the total amount of electricity generated using coal and nuclear between
+1949-1990.( In this dataset, rows containing monthly data express date in the format
+'YYYYMM'. Rows containing annual data express the date in the format 'YYYY13'.)
+'''
+
+print()
+
+'''
+8. Print all the unique sources of Energy generation present in the dataset
+'''
+print("The unique sources of Energy generation:\n",np.unique(data[:,0:1]))
+
+print()
+
